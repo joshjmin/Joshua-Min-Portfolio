@@ -13,7 +13,17 @@ const projects = [
     },
     {
         id: 2,
-        title: "Project2",
+        title: "Connect 4 Game",
+        description: "Connect 4 Game program in C.",
+        image: "/projects/Connect4.png",
+        tags: ["C"],
+        demoURL: "#",
+        githubURL: "#",
+
+    },
+    {
+        id: 3,
+        title: "Project2]3",
         description: "A stupuid project blah blahblah.",
         image: "/projects/project2.png",
         tags: ["React", "TailwindCSS", "Supabase"],
