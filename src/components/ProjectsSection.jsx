@@ -14,7 +14,7 @@ const projects = [
     {
         id: 2,
         title: "Connect 4 Game",
-        description: "Connect 4 Game program in C.",
+        description: "Connect 4 Game program in the terminal in C.",
         image: "/projects/Connect4.png",
         tags: ["C"],
         demoURL: "#",
@@ -23,10 +23,10 @@ const projects = [
     },
     {
         id: 3,
-        title: "Project2]3",
-        description: "A stupuid project blah blahblah.",
-        image: "/projects/project2.png",
-        tags: ["React", "TailwindCSS", "Supabase"],
+        title: "Speedy Penguin",
+        description: "A fast-paced game with endless runner mechanics, responsive controls, and dynamic obstacle generation.",
+        image: "/projects/SpeedyPenguin.png",
+        tags: ["Python", "Pygame"],
         demoURL: "#",
         githubURL: "#",
 
