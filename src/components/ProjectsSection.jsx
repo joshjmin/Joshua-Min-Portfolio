@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Github, ArrowRight } from "lucide-react";
 
 const projects = [
     {
@@ -7,8 +7,8 @@ const projects = [
         description: "A reversi game-playing program that plays against a human opponent using the minimax algorithm.",
         image: "/projects/Reversi.png",
         tags: ["C", "Minimax"],
-        demoURL: "#",
-        githubURL: "https://github.com/joshjmin/Joshua-Min/blob/main/Reversi_AI.c",
+        //demoURL: "#",
+        githubURL: "https://github.com/joshjmin/Reversi",
 
     },
     {
@@ -17,8 +17,8 @@ const projects = [
         description: "Connect 4 Game program in the terminal in C.",
         image: "/projects/Connect4.png",
         tags: ["C"],
-        demoURL: "#",
-        githubURL: "#",
+        //demoURL: "#",
+        githubURL: "https://github.com/joshjmin/Connect-4",
 
     },
     {
@@ -27,10 +27,19 @@ const projects = [
         description: "A fast-paced game with endless runner mechanics, responsive controls, and dynamic obstacle generation.",
         image: "/projects/SpeedyPenguin.png",
         tags: ["Python", "Pygame"],
-        demoURL: "#",
-        githubURL: "#",
-
+        //demoURL: "#",
+        githubURL: "https://github.com/joshjmin/SpeedyPenguin",
     },
+    {
+        id: 4,
+        title: "Nito Schedule",
+        description: "AWS integrated automatic exam schedule generator based on professors', students', and room availability.",
+        image: "/projects/NitoSchedule.png",
+        tags: ["Python", "AWS Claude 3.5 Sonnet v2", "Amazon Bedrock", "Amazon S3", "Figma"],
+        //demoURL: "#",
+        githubURL: "https://github.com/joshjmin/Nito-Schedule",
+    },
+    
 ];
 
 export const ProjectsSection = () => {
@@ -73,12 +82,12 @@ export const ProjectsSection = () => {
 
                         <div className="flex justify-between items-center">
                             <div className="flex space-x-3">
-                                <a
+                                {/*<a
                                 href={project.demoURL}
                                 target="_blank"
                                 className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                     < ExternalLink size={20}/>
-                                </a>
+                                </a> */}
                                 <a
                                 href={project.githubURL}
                                 target="_blank"
