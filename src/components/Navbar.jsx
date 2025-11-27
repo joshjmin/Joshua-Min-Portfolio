@@ -18,7 +18,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.screenY > 10);
+            setIsScrolled(window.scrollY > 10);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -32,11 +32,12 @@ export const Navbar = () => {
             )}
         >
             <div className="container flex items-center justify-between">
-                <a className="text-xl font-bold text-primary flex items-center"
+                <a className="text-xl font-bold flex items-center"
                     href="#hero"
                 >
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"> Joshua's </span> {""}Portfolio
+                        <span className="text-glow text-foreground"> Joshua's </span>
+                        <span className="text-gradient">Portfolio</span>
                     </span>
                 </a>
 
@@ -46,7 +47,9 @@ export const Navbar = () => {
                         <a
                             key={key}
                             href={item.href}
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            className="text-foreground/80 transition-colors duration-300"
+                            onMouseEnter={(e) => e.currentTarget.style.color = '#8b5cf6'}
+                            onMouseLeave={(e) => e.currentTarget.style.color = ''}
                         >
                             {item.name}
                         </a>
@@ -76,8 +79,10 @@ export const Navbar = () => {
                             <a
                                 key={key}
                                 href={item.href}
-                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                onClick={() => setMenuisOpen(false)}
+                                className="text-foreground/80 transition-colors duration-300"
+                                onClick={() => setIsMenuOpen(false)}
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#8b5cf6'}
+                                onMouseLeave={(e) => e.currentTarget.style.color = ''}
                             >
                                 {item.name}
                             </a>
