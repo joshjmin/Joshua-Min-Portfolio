@@ -22,41 +22,51 @@
 
 
   @keyframes float {
+
     0%,
     100% {
       transform: translateY(0);
     }
+
     50% {
-      transform: translate(-10px);
+      transform: translateY(-10px);
     }
   }
+
   @keyframes pulse-subtle {
+
     0%,
     100% {
       opacity: 1;
     }
+
     50% {
       opacity: 0.8;
     }
   }
+
   @keyframes fade-in {
     from {
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+
   @keyframes meteor {
     0% {
       transform: rotate(215deg) translateX(0);
       opacity: 1;
     }
+
     70% {
       opacity: 1;
     }
+
     100% {
       transform: rotate(215deg) translateX(-500px);
       opacity: 0;
@@ -65,7 +75,7 @@
 }
 
 
-@layer base{
+@layer base {
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
@@ -76,6 +86,13 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
+
+    --frontend-light: 216 80% 92%;
+    /* light blue */
+    --backend-light: 270 70% 92%;
+    /* light purple */
+    --tools-light: 160 70% 92%;
+    /* light green */
   }
 
   .dark {
@@ -88,6 +105,13 @@
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
+
+    --frontend-dark: 216 78% 45%;
+    /* dark blue */
+    --backend-dark: 270 70% 38%;
+    /* dark purple */
+    --tools-dark: 160 70% 38%;
+    /* dark green */
   }
 
   * {
@@ -105,22 +129,26 @@
 }
 
 @utility container {
-  margine-inline: auto;
+  margin-inline: auto;
   padding-inline: 2rem;
 
-  @media (width >= 640px) {
+  @media (width >=640px) {
     max-width: 640px;
   }
-  @media (width >= 768px) {
+
+  @media (width >=768px) {
     max-width: 768px;
   }
-  @media (width >= 1024px) {
+
+  @media (width >=1024px) {
     max-width: 1024px;
   }
-  @media (width >= 1280px) {
+
+  @media (width >=1280px) {
     max-width: 1280px;
   }
-  @media (width >= 1400px) {
+
+  @media (width >=1400px) {
     max-width: 1400px;
   }
 }
@@ -138,13 +166,11 @@
   @apply relative rounded-md;
   background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
   background-clip: padding-box;
-  border: 1 px solid transparent;
+  border: 1px solid transparent;
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
-         hover:scale-105 active:scale-95;
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139, 92, 246, 0.5)] hover:scale-105 active:scale-95;
 }
 
 @utility star {
@@ -153,8 +179,58 @@
 }
 
 @utility meteor {
-  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  @apply absolute bg-gradient-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+@layer utilities {
+  .skill-frontend {
+    background-color: hsl(var(--frontend-light));
+  }
+
+  .dark .skill-frontend {
+    background-color: hsl(var(--frontend-dark));
+  }
+
+  .skill-backend {
+    background-color: hsl(var(--backend-light));
+  }
+
+  .dark .skill-backend {
+    background-color: hsl(var(--backend-dark));
+  }
+
+  .skill-tools {
+    background-color: hsl(var(--tools-light));
+  }
+
+  .dark .skill-tools {
+    background-color: hsl(var(--tools-dark));
+  }
+
+  .skill-fill-frontend {
+    background-color: hsl(216 80% 55%);
+  }
+
+  .dark .skill-fill-frontend {
+    background-color: hsl(216 78% 55%);
+  }
+
+  .skill-fill-backend {
+    background-color: hsl(270 70% 45%);
+  }
+
+  .dark .skill-fill-backend {
+    background-color: hsl(270 70% 45%);
+  }
+
+  .skill-fill-tools {
+    background-color: hsl(160 70% 45%);
+  }
+
+  .dark .skill-fill-tools {
+    background-color: hsl(160 70% 45%);
+  }
 }
 
 #root {
