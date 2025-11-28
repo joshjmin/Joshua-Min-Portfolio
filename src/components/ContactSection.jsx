@@ -83,17 +83,10 @@ export const ContactSection = () => {
                     {contactInfo.map((item, index) => (
                         <div
                             key={index}
-                            className="p-8 text-center bg-card rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-2"
+                            className="p-8 text-center bg-card rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
                             style={{
-                                borderColor: '#8b5cf6',
                                 animation: `fade-in 0.6s ease-out ${index * 0.1}s forwards`,
                                 opacity: 0
-                            }}
-                            onMouseEnter={(e) => {
-                                e.currentTarget.style.borderColor = '#a855f7';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.currentTarget.style.borderColor = '#8b5cf6';
                             }}
                         >
                             <a href={item.href} className="block">
@@ -125,8 +118,7 @@ export const ContactSection = () => {
                             href="https://www.linkedin.com/in/joshua-min-58b6ba335/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 rounded-xl bg-card border-2 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md"
-                            style={{ borderColor: '#8b5cf6' }}
+                            className="p-4 rounded-xl bg-card hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.background = "linear-gradient(45deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #3b82f6 100%)";
                                 e.currentTarget.querySelector('svg').style.color = 'white';
@@ -142,8 +134,7 @@ export const ContactSection = () => {
                             href="https://www.instagram.com/joshmin27/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 rounded-xl bg-card border-2 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md"
-                            style={{ borderColor: '#8b5cf6' }}
+                            className="p-4 rounded-xl bg-card hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.background = "linear-gradient(45deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #3b82f6 100%)";
                                 e.currentTarget.querySelector('svg').style.color = 'white';
@@ -159,8 +150,7 @@ export const ContactSection = () => {
                             href="https://discord.com/users/jmin0026"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-4 rounded-xl bg-card border-2 hover:scale-105 transition-all duration-300 shadow-sm hover:shadow-md"
-                            style={{ borderColor: '#8b5cf6' }}
+                            className="p-4 rounded-xl bg-card hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl"
                             title="Discord: jmin0026"
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.background = "linear-gradient(45deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #3b82f6 100%)";
@@ -179,8 +169,7 @@ export const ContactSection = () => {
                 </div>
 
                 {/* Contact Form */}
-                <div className="max-w-2xl mx-auto bg-card p-8 rounded-2xl shadow-lg border-2"
-                    style={{ borderColor: '#8b5cf6' }}>
+                <div className="max-w-2xl mx-auto bg-card p-8 rounded-2xl shadow-lg">
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="grid sm:grid-cols-2 gap-6">
                             <div>

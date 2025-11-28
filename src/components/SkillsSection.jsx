@@ -8,13 +8,11 @@ const skills = [
     { name: "React", level: 80, category: "frontend" },
     { name: "TailwindCSS", level: 80, category: "frontend" },
     { name: "Swift", level: 90, category: "frontend" },
-    { name: "Verilog", level: 100, category: "frontend" },
 
 
     //Backend
     { name: "Python", level: 100, category: "backend" },
     { name: "C", level: 100, category: "backend" },
-    { name: "C++", level: 100, category: "backend" },
     { name: "SQL", level: 90, category: "backend" },
     { name: "Pygame", level: 90, category: "backend" },
     { name: "MATLAB", level: 70, category: "backend" },
@@ -22,7 +20,6 @@ const skills = [
     //Tools
     { name: "VSCode", level: 100, category: "tools" },
     { name: "MS Office", level: 100, category: "tools" },
-    { name: "FPGA", level: 100, category: "tools" },
     { name: "AutoCAD", level: 90, category: "tools" },
     { name: "Fusion360", level: 100, category: "tools" },
     { name: "SwiftUI", level: 80, category: "tools" },
@@ -71,12 +68,11 @@ export const SkillsSection = () => {
                 <div className="flex flex-wrap justify-center gap-4">
                     {filteredSkills.map((skill, index) => (
                         <div
-                            key={index}
-                            className="px-6 py-3 border-2 rounded-xl font-medium shadow-sm hover:shadow-md transition-all duration-300 cursor-default bg-card text-foreground hover:scale-105 hover:-translate-y-0.5 whitespace-nowrap"
+                            key={`${activeCategory}-${skill.name}`}
+                            className="px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-2xl transition-all duration-300 cursor-default bg-card text-foreground hover:scale-105 hover:-translate-y-1 whitespace-nowrap"
                             style={{
                                 animation: `fade-in 0.4s ease-out ${index * 0.05}s forwards`,
-                                opacity: 0,
-                                borderColor: '#8b5cf6'
+                                opacity: 0
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.background = "linear-gradient(45deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #3b82f6 100%)";

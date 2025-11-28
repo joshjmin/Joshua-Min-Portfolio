@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Briefcase } from "lucide-react";
+import { GraduationCap, Download, Award, Briefcase } from "lucide-react";
 
 export const AboutSection = () => {
     return (
@@ -465,10 +465,17 @@ export const AboutSection = () => {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                         href="#contact"
-                        className="px-8 py-4 text-lg rounded-xl text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                        className="px-8 py-4 text-lg rounded-xl text-white font-semibold transition-all duration-300 text-center hover:scale-105"
                         style={{
                             background: "linear-gradient(45deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #3b82f6 100%)",
-                            backgroundSize: "200% 200%"
+                            backgroundSize: "200% 200%",
+                            boxShadow: '0 8px 20px -3px rgba(59, 130, 246, 0.4), 0 4px 10px -2px rgba(139, 92, 246, 0.3)'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '0 20px 40px -5px rgba(59, 130, 246, 0.5), 0 10px 25px -3px rgba(139, 92, 246, 0.4)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 8px 20px -3px rgba(59, 130, 246, 0.4), 0 4px 10px -2px rgba(139, 92, 246, 0.3)';
                         }}
                     >
                         Get In Touch
@@ -476,11 +483,19 @@ export const AboutSection = () => {
 
                     <a
                         href="https://docs.google.com/document/d/1J51pmr4jHjuMDXIvMfa57EeNFXndxnYdLIKnrkhcgZM/edit?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-8 py-4 text-lg rounded-xl border-2 font-semibold hover:bg-secondary transition-all duration-300 text-center"
-                        style={{ borderColor: '#8b5cf6', color: '#8b5cf6' }}
+                        className="px-8 py-4 text-lg rounded-xl bg-card text-foreground font-semibold transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                        style={{
+                            borderColor: '#8b5cf6',
+                            boxShadow: '0 8px 20px -3px rgba(139, 92, 246, 0.3), 0 4px 10px -2px rgba(139, 92, 246, 0.2)'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.boxShadow = '0 20px 40px -5px rgba(139, 92, 246, 0.4), 0 10px 25px -3px rgba(139, 92, 246, 0.3)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.boxShadow = '0 8px 20px -3px rgba(139, 92, 246, 0.3), 0 4px 10px -2px rgba(139, 92, 246, 0.2)';
+                        }}
                     >
+                        <Download className="w-5 h-5" />
                         Download CV
                     </a>
                 </div>
@@ -488,3 +503,6 @@ export const AboutSection = () => {
         </section>
     );
 };
+
+
+
