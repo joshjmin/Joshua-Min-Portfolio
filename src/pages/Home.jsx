@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
-import { ThemeThoggle } from "../components/ThemeThoggle";
+import { ThemeToggle } from "../components/ThemeToggle";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { AboutSection } from "@/components/AboutSection";
 import { SkillsSection } from "@/components/SkillsSection";
@@ -12,7 +12,7 @@ export const Home = () => {
     return (
         <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
             {/* Theme Toggle */}
-            <ThemeThoggle />
+            <ThemeToggle />
 
             {/* Animated Background */}
             <AnimatedBackground isDark={true} />

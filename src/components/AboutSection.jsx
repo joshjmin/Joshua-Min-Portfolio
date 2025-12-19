@@ -36,7 +36,7 @@ export const AboutSection = () => {
                                         University of Toronto
                                     </div>
                                     <div className="text-sm mb-3 text-foreground/60">
-                                        2021 - 2029 (Expected)
+                                        2024 - 2029 (Expected)
                                     </div>
                                     <div className="inline-block px-3 py-1 rounded-full text-sm font-medium mb-3"
                                         style={{
