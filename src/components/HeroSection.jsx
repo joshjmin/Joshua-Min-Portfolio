@@ -111,7 +111,7 @@ export const HeroSection = () => {
                             <ArrowRight className="w-5 h-5" />
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/1S2ff5uIIaA3QxCGPWvvtR4wRw4v1uq5y/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1cmv3BHrS3AGz1Lzx7hlqx3ekhUQWGNIz/view?usp=sharing"
                             className="px-8 py-4 text-lg rounded-xl bg-card text-foreground font-semibold transition-all duration-300 flex items-center gap-2 hover:scale-105"
                             style={{
                                 borderColor: '#8b5cf6',
