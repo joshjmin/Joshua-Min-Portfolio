@@ -44,7 +44,7 @@ export const AboutSection = () => {
                                             color: '#10b981'
                                         }}
                                     >
-                                        GPA: 3.8/4.0
+                                        GPA: 3.67/4.0
                                     </div>
                                     <p className="text-foreground/70">
                                         Dean’s List Scholar
@@ -211,10 +211,10 @@ export const AboutSection = () => {
 
                                     </div>
                                     <p className="text-foreground/70">
-                                        Presented CS, AI, web dev workshops with Google Colab, GitHub, Firebase to teach real-world dev workflows
+                                        Delivered Agentic AI, API, web dev workshops using Firebase and Git to teach software workflows
                                     </p>
                                     <p className="text-foreground/70">
-                                        Managed multi-week bootcamps with milestones, LLM tools, and automation, boosting project success rates
+                                        Managed multi-week bootcamps with milestones and LLM tools, boosting project success rates by 80%
                                     </p>
                                     <p className="text-foreground/70">
                                         Created templates, codebases, and checklists to streamline onboarding and improve outcomes for 50+ participants
@@ -277,7 +277,7 @@ export const AboutSection = () => {
                                         May 2025 - Sep 2025
                                     </div>
                                     <p className="text-foreground/70">
-                                        Provided attentive and efficient service and maintained a clean, organized dining area in a fast paced Korean BBQ restaurant
+                                        Provided attentive and efficient service and maintained a clean, organized dining area in a fast paced environment
 
                                     </p>
                                 </div>
@@ -337,13 +337,13 @@ export const AboutSection = () => {
                                         Jan 2025 - Apr 2025
                                     </div>
                                     <p className="text-foreground/70">
-                                        Led a team of 6 students to develop more efficient and cost effective solutions for book conservation
+                                        Led a team of students to translate client requirements into engineering design specifications
                                     </p>
                                     <p className="text-foreground/70">
-                                        Created project requirements and conceptual design specifications using client analysis and Fusion360
+                                        Coordinated cross-functional teamwork while managing stakeholder alignment, timelines, and deliverables
                                     </p>
                                     <p className="text-foreground/70">
-                                        Developed a prototype which increased efficiency through a 90% reduction in runtime
+                                        Developed and validated a prototype achieving a 90% reduction in runtime through testing and analysis
                                     </p>
 
                                 </div>
@@ -373,10 +373,10 @@ export const AboutSection = () => {
                                         Jan 2023 - Feb 2023
                                     </div>
                                     <p className="text-foreground/70">
-                                        Tested CBTC systems by diagnosing and changing malfunctioning wayside devices to ensure reliable signaling
+                                        Tested CBTC systems by debugging and changing malfunctioning wayside devices to ensure reliable signaling
                                     </p>
                                     <p className="text-foreground/70">
-                                        Compiled and deployed embedded software on EPROMs and CPU boards to validate through simulations
+                                        Deployed and verified embedded Assembly software to validate through simulations and structured testing
                                     </p>
 
                                 </div>
@@ -406,13 +406,13 @@ export const AboutSection = () => {
                                         Jul 2022 - Aug 2022
                                     </div>
                                     <p className="text-foreground/70">
-                                        Filtered and analyzed 200+ data of the plastic pallets shipping distribution paths using Microsoft Excel
+                                    Filtered and analyzed 200+ data of the plastic pallets shipping distribution paths and misdirected shipments
                                     </p>
                                     <p className="text-foreground/70">
-                                        Created visual dashboards using Powerpoint and Excel to display the dwelling, distribution, and leakages
+                                    Identified and corrected 95% of routing errors, improving system efficiency and pallet recovery
                                     </p>
                                     <p className="text-foreground/70">
-                                        Identified and corrected 90% of routing errors, reducing misdirected shipments and improving pallet recovery
+                                    Created visual dashboards using Powerpoint and Excel to display the dwelling, distribution, and leakages
                                     </p>
 
                                 </div>
