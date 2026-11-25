@@ -118,8 +118,7 @@ export function Home() {
         <section className="wrap" id="about">
           <div className="about">
             <div className="photo">
-              {/* Put your photo at public/photo.jpg and replace this span with <img src="photo.jpg" alt="Joshua Min" /> */}
-              <span>JM</span>
+              <img src="photo.jpg" alt="Joshua Min" loading="lazy" />
             </div>
             <div className="about-text">
               <p className="kicker light">About me</p>
