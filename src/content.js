@@ -1,5 +1,5 @@
 // All site copy lives here. Facts come from Joshua's resume and experience notes.
-// Text wrapped in {{double braces}} is a figure that still needs confirming:
+// Text wrapped in double braces is a figure that still needs confirming:
 // it is highlighted in review builds (npm run build:review) and renders as plain text in production.
 
 export const profile = {
@@ -90,7 +90,7 @@ export const allCases = [
       ["Role", "Founder & product lead: research, scope, priorities, design direction, testing, rollout and feedback"],
       ["Team", "Just me, directing an AI coding assistant, with worship leaders and members as users and testers"],
       ["Platform", "An installable web app for iPhone and Android, in English and Korean"],
-      ["Results", "{{100+ members}} across churches and Korean Christian clubs, weekly setlists, {{about 95%}} RSVP before rehearsal, 15+ iterations, $0 a month to run"],
+      ["Results", "100+ members across churches and Korean Christian clubs, weekly setlists, about 95% RSVP before rehearsal, 15+ iterations, $0 a month to run"],
     ],
     sections: [
       {
@@ -160,9 +160,9 @@ export const allCases = [
         title: "Launch and adoption",
         body: ["I rolled Kinnor out to my band with an invite link and home-screen install steps, then let it spread on its own."],
         list: [
-          "{{100+ members}} now use it, across churches and Korean Christian clubs, all through word of mouth.",
+          "100+ members now use it, across churches and Korean Christian clubs, all through word of mouth.",
           "Setlists are published every week, so the app is part of the routine, not a one-off.",
-          "{{About 95%}} of members answer Yes, Maybe or No before rehearsal. The usual exception is one person answering on the day.",
+          "About 95% of members answer Yes, Maybe or No before rehearsal. The usual exception is one person answering on the day.",
           "It costs $0 a month to run, on free tiers.",
         ],
         bodyAfter: ["The RSVP rate is the number I watch most, because it shows the behaviour actually changed. Leaders now plan from answers instead of asking around."],
@@ -215,7 +215,7 @@ export const allCases = [
         list: [
           "Short follow-up interviews to measure the before and after, like how often leaders still ask \u201cwho's coming?\u201d in the chat",
           "Tracking RSVP rate and active members monthly from the database",
-          "Exploring text chord sheets with one-tap transpose, {{the most common idea in feedback so far}}",
+          "Exploring text chord sheets with one-tap transpose, the most common idea in feedback so far",
         ],
       },
     ],
@@ -251,7 +251,7 @@ export const allCases = [
         list: [
           "A map with six zoom levels that show more detail as you zoom in, roads ranked by colour and thickness, and labels that follow each road without overlapping",
           "Live weather and a scale bar that adjusts as you zoom",
-          "Colour-coded points of interest and speed limit markers, {{checked in user testing against a 10-second benchmark}}",
+          "Colour-coded points of interest and speed limit markers, checked in user testing against a 10-second benchmark",
           "A custom interface with a night mode",
           "Subway lines in distinct colours, with their stations",
           "A chatbot that answers questions like \u201cwhich of those has a patio?\u201d using live map data, and remembers the conversation",
@@ -375,8 +375,8 @@ allCases.push(
       {
         title: "What I do",
         body: [
-          "I ran logistics for Technical Interview Night on September 21, 2026, at U of T's Bahen Centre. 100+ students practised with mock interviews run by about 50 industry interviewers and recruiters, got resume feedback, showed off their projects in a new project showcase and networked with companies{{ such as Qualcomm, AMD, Google, Amazon and Hydro One}}. I handled the rooms, catering and scheduling, all on a tight timeline.",
-          "Now I'm planning MakeUofT, IEEE U of T's well-known 24-hour hardware hackathon. I'm working on the schedule, catering, prizes and their budgets, the themes, and generally everything the event needs to run. Last year's MakeUofT had 258 hackers, and we're planning for {{250+}} this year.",
+          "I ran logistics for Technical Interview Night on September 21, 2026, at U of T's Bahen Centre. 100+ students practised with mock interviews run by about 50 industry interviewers and recruiters, got resume feedback, showed off their projects in a new project showcase and networked with companies such as Qualcomm, AMD, Hitachi and Microchip. I handled the rooms, catering and scheduling, all on a tight timeline.",
+          "Now I'm planning MakeUofT, IEEE U of T's well-known 24-hour hardware hackathon. I'm working on the schedule, catering, prizes and their budgets, the themes, and generally everything the event needs to run. Last year's MakeUofT had 258 hackers, and we're planning for 250+ this year.",
         ],
       },
     ],
@@ -586,7 +586,7 @@ const bySlug = (slug) => cases.find((c) => c.slug === slug);
 
 // Cards on the home page. "card" is the short line shown on each card.
 export const experience = [
-  { slug: "kinnor", mark: "K", icon: "projects/kinnor/icon.svg", card: "Founded a bilingual app for worship teams. It grew to {{100+}} members by word of mouth, and {{about 95%}} RSVP before rehearsal." },
+  { slug: "kinnor", mark: "K", icon: "projects/kinnor/icon.svg", card: "Founded a bilingual app for worship teams. It grew to 100+ members by word of mouth, and about 95% RSVP before rehearsal." },
   { slug: "hitachi-rail", mark: "HR", icon: "projects/hitachi/logo.png", iconWide: true, card: "Pitched and built an automated test system that cut diagnostic time by 90%. 10+ engineers still use it." },
   { slug: "ieee", mark: "IE", icon: "projects/ieee/logo.png", iconWide: true, card: "Ran logistics for Technical Interview Night: 100+ students and about 50 industry interviewers. Now planning MakeUofT." },
   { slug: "gdg", mark: "GD", icon: "projects/gdg/logo.png", card: "Ran AI bootcamps and raised project completion from 60% to 85% based on attendee feedback." },
@@ -606,8 +606,8 @@ export const leadership = [
     name: "IEEE U of T Student Branch",
     role: "Logistics associate",
     when: "May 2026 – present",
-    short: "Ran logistics for Technical Interview Night, with 100+ students and about 50 industry interviewers. Now planning MakeUofT for {{250+ hackers}}.",
-    body: "I ran rooms, catering and scheduling for Technical Interview Night, with 100+ students and about 50 industry interviewers on a tight timeline. Now I'm planning MakeUofT, IEEE U of T's 24-hour hardware hackathon, for {{250+ hackers}}: the schedule, catering, prizes and budgets, and themes.",
+    short: "Ran logistics for Technical Interview Night, with 100+ students and about 50 industry interviewers. Now planning MakeUofT for 250+ hackers.",
+    body: "I ran rooms, catering and scheduling for Technical Interview Night, with 100+ students and about 50 industry interviewers on a tight timeline. Now I'm planning MakeUofT, IEEE U of T's 24-hour hardware hackathon, for 250+ hackers: the schedule, catering, prizes and budgets, and themes.",
   },
   {
     name: "Google Developer Groups, U of T",
