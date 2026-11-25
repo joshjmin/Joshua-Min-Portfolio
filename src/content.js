@@ -629,7 +629,7 @@ export const builds = [
 
 export const education = {
   school: "University of Toronto",
-  degree: "BASc in Computer Engineering + PEY Co-op",
+  degree: "BASc in Computer Engineering, minors in AI and Business",
   when: "Sep 2024 – May 2029",
   coursework: "Deep learning, operating systems, data structures and algorithms, databases, object-oriented programming in C++",
 };

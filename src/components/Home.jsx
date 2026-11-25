@@ -124,7 +124,7 @@ export function Home() {
               <p className="kicker light">About me</p>
               <h2>A Builder Who Starts with the People</h2>
               <p>
-                I'm in my third year of computer engineering at U of T, in the PEY co-op program. I'm most interested in
+                I'm in my third year of computer engineering at U of T, with minors in AI and business. I'm most interested in
                 product management, along with program management, solutions engineering and software development.
               </p>
               <p>
