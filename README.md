@@ -1,39 +1,16 @@
-# 🌐 Joshua Min — Portfolio
+# joshmin.me
 
-A modern, responsive portfolio website showcasing my projects, skills, and experience.  
-Built with **React**, **Vite**, and **TailwindCSS**, featuring smooth animations and a clean UI.
+Joshua Min's personal site: case studies in product, program and solutions work.
 
-🔗 **Live Website:**  
-👉 https://joshuamin-portfolio.vercel.app/
+Built with React and Vite. All copy lives in `src/content.js`.
 
----
+```
+npm install
+npm run dev            # local preview
+npm run build          # production build in dist/
+npm run build:review   # build that highlights figures still to confirm
+```
 
-## ✨ Features
-
-- 📱 Fully responsive design (mobile → desktop)
-- 🌙 Dark / Light theme toggle
-- 🎨 Animated background
-- 📬 Contact form powered by EmailJS
-- 🧩 Project showcase section
-
----
-
-## 🛠 Tech Stack
-
-- **Frontend:** React 18, Vite  
-- **Styling:** TailwindCSS  
-- **Icons:** Lucide React  
-- **Email Service:** EmailJS  
-- **Deployment:** Vercel / GitHub Pages / Netlify  
-
----
-
-## 📁 Project Structure
-
-```text
-src/
-├── components/
-├── pages/
-├── assets/
-├── hooks/
-└── styles/
+In `src/content.js`, text wrapped in `{{double braces}}` is a figure that still needs confirming.
+The review build highlights it; the production build shows it as plain text.
+Remove the braces once a figure is confirmed.
